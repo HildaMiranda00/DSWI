@@ -2,16 +2,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-    background-color: #000000;
-    color: #fff;
     overflow-x: hidden;
+    background-color: #ffffff;
 }
-
+#head-container {
+    width: 1440px;
+    height: 900px;
+    background-size: cover;
+    background-image: url('Men_Prefall2024_Show_WW_HP_Push_DI3.webp'); 
+    background-position: center;
+    background-attachment: local;
+}
 header {
-    background-color: transparent; 
     color: #fff;
+    background-color: transparent;
     padding: 1em;
-    transition: background-color 0.3s ease; 
+    transition: background-color 0.3s ease;
 }
 
 .logo-container {
@@ -21,7 +27,7 @@ header {
 }
 
     .header-hover {
-        background-color: #ffffff;
+        background-color: #ffffff59;
 }
 
 .logo-container {
@@ -31,7 +37,7 @@ header {
 }
 
 nav {
-    background-color: #000000;
+    background-color: #ffffff50;
     text-decoration: none;
 }
 
@@ -53,10 +59,11 @@ nav a {
 }
 
 nav a:hover {
-    color: #333333 
+    color: #5e676b 
 }
 
 .hero-section {
+    margin-bottom: 0;
     background-size: cover;
     background-position: center;
     color: #ffffff;
@@ -67,11 +74,6 @@ nav a:hover {
 .featured-section {
     overflow: hidden;
     position: relative;
-}
-
-.carousel-container {
-    display: flex;
-    width: 300%; 
 }
 
 .carousel-track {
@@ -88,11 +90,11 @@ nav a:hover {
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-image: url('Men_Prefall2024_Show_WW_HP_Push_DI3.webp');
     text-align: center;
-    padding: 1em;
+    padding: 2em;
 }
+
 
 .carousel-prev,
 .carousel-next {
@@ -114,9 +116,12 @@ footer {
     right: 0;
 }
 
+
 .carousel-inner img {
     max-width: 100%; 
     height: auto;
+    
+    
 }
 
 .featured-section {
@@ -127,8 +132,10 @@ footer {
 }
 
 .carousel-container {
-    max-width: 600px;
-    width: 100%;
+    width: 1440px;
+    height: 600px;
+    margin-bottom: 0;
+
 }
 
 .collection-button {
@@ -141,16 +148,123 @@ footer {
     transition: opacity 0.3s ease;
     margin-top: 20px;
 }
+.button-container a.collection-button {
+    background-color: #ffffff;
+    color: #000000; /* Cor do texto do link */
+    text-decoration: none; /* Remover sublinhado */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    margin-top: 20px;
+}
 
+.button-container a.collection-button:hover {
+    opacity: 1;
+    color: #5e676b; /* Cor do texto do link ao passar o mouse */
+}
 .collection-button:hover {
     opacity: 1;
 }
 .button-container {
-    text-align: center;
-    margin-top: 600px;
-    margin-bottom: 20px;
+    position: absolute;
+    bottom: 20px; 
+    left: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
 }
 
+.collection-banner {
+    position: relative;
+    margin-bottom: 0;
+    width: 1440px;
+    height: 200px;
+    background-size: cover;
+    background-image: url('Men_Prefall2024_Show_WW_HP_Push_DI3.webp'); 
+    background-position: center;
+    background-attachment: local;
+}
+
+.collection-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+}
+
+.collection-link img {
+    width: 100%;
+    height: auto;
+}
+
+.collection-text {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.collection-link:hover .collection-text {
+    opacity: 1;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-section {
+        padding: 1em;
+    }
+
+    .featured-section {
+        margin-top: 50px;
+    }
+
+    .carousel-container {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; 
+    }
+
+    header {
+        padding: 0.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 0.5em;
+    }
+
+    .hero-section {
+        padding: 1em;
+        font-size: 18px; 
+    }
+
+    .featured-section {
+        margin-top: 30px;
+    }
+
+
+    .button-container {
+        margin-top: 20px;
+    }
+
+    .collection-text {
+        font-size: 14px;
+    }
+}
 
 
 

@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     const header = document.getElementById('main-header');
     const logoContainer = document.querySelector('.logo-container');
 
@@ -22,4 +25,5 @@ document.addEventListener('DOMContentLoaded', function () {
         );
     }
 })
+    
     
