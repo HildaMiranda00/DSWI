@@ -3,96 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro - HM | High Fashion</title>
+    <title>HM | Login</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Roboto', sans-serif;
-            overflow-x: hidden;
-            background-color: #ffffff;
-        }
-
-        .container {
-            position: relative;
-        }
-
-        #home-container {
-            width: 100%;
-            height: 100vh;
-            background-size: cover;
-            background-image: url('Men_Prefall2024_Show_WW_HP_Push_DI3.webp'); 
-            background-position: center;
-            background-attachment: local;
-            z-index: 1;
-        }
-
-        #cadastro-container {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 40%;
-            z-index: 2;
-            background-color: rgba(255, 255, 255, 0.8);
-            padding: 20px;
-            border-radius: 10px;
-        }
-
-        header {
-            color: #fff;
-            background-color: transparent;
-            padding: 1em;
-            transition: background-color 0.3s ease;
-            z-index: 3;
-        }
-
-        nav {
-            position: relative;
-            z-index: 3;
-        }
-
-    </style>
+  
 </head>
 <body>
-    <div id="home-container">
-    </div>
 
-    <div id="cadastro-container">
+    <div id="head-container">
+   
         <header id="main-header">
             <div class="logo-container">
                 <h1>HM</h1>
             </div>
         </header>
+
         <nav>
             <ul>
                 <li><a href="home.html">Início</a></li>
                 <li><a href="colecoes.html">Coleções</a></li>
-                <li><a href="#">Acessórios</a></li>
-                <li><a href="login.html">Cadastro</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
             </ul>
         </nav>
-       
 
-        <section class="cadastro-section">
-            <h2>Cadastre-se</h2>
-            <form>
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required>
-
-                <button type="submit">Cadastrar</button>
+        <div class="login-container">
+            <h2>Login</h2>
+            <form action="#" method="post">
+                <label for="email">E-mail:</label>
+                <input type="text" id="email" name="email" required>
+                
+                <label for="password">Senha:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <button type="submit">Entrar</button>
             </form>
-        </section>
+        </div>
     </div>
-
+    <div id="message-container">
+        <!-- Mensagens serão adicionadas aqui dinamicamente -->
+    </div>
+    
     <footer>
         <p>&copy; 2023 HM - High Fashion. Todos os direitos reservados.</p>
     </footer>
@@ -101,8 +52,11 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="script.js"></script>
+
+    <script>
+        function login() {
+            return false; // Evitar envio real do formulário
+        }
+    </script>
 </body>
 </html>
-
-
-

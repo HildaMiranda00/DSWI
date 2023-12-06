@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    height: 3cm;
+}
+
+header {
+    
+    background-image: url('Men_Prefall2024_Show_WW_HP_Push_DI3.webp');
+    color: #ffffff;
+    background-color: transparent;
+    padding: 3em;
+    transition: background-color 0.3s ease;
+    background-size: cover;
+    background-position: center;
+   
+}
+.success-message {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+header:hover {
+    background-color: rgba(255, 255, 255, 0.79);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+nav {
+    background-color: #ffffff6e;
+    background-image: url('Men_Prefall2024_Show_WW_HP_Push_DI3.webp');
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    padding: 1em;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffffff;
+}
+
+.hero-section,
+.featured-section {
+    text-align: center;
+    padding: 2em;
+    
+}
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.error {
+    color: #ff0000;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+footer {
+    height: 100px;
+    background-color: transparent;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('Men_Prefall2024_Show_WW_HP_Push_DI3.webp');
+}
+
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 0.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    nav a {
+        padding: 0.5em;
+    }
+
+    .hero-section,
+    .featured-section {
+        padding: 1em;
+    }
+
+    .featured-section {
+        margin-top: 30px;
+    }
+
+    .button-container {
+        margin-top: 20px;
+        position: relative;
+    }
+
+    .collection-text {
+        font-size: 14px;
+    }
+}

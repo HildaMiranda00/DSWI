@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM | Catálogo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="head-container">
+        <header id="main-header">
+            <div class="logo-container">
+                <h1>HM</h1>
+            </div>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="home.html">Início</a></li>
+                <li><a href="colecoes.html">Coleções</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="login.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="catalog-section">
+        <div class="cover-image" id="coverImage">
+        </div>
+
+        <div class="gallery-container" id="galleryContainer">
+        </div>
+    </section>
+
+    <div class="lightbox-modal" id="lightboxModal">
+        <div class="lightbox">
+            <span class="close-modal" onclick="closeLightbox()">&times;</span>
+            <div class="lightbox-content">
+                <img src="" alt="Catalog Image">
+            </div>
+            <div class="lightbox-navigation">
+                <span class="prev" onclick="navigate(-1)">&#10094;</span>
+                <span class="next" onclick="navigate(1)">&#10095;</span>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 HM - High Fashion. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+
